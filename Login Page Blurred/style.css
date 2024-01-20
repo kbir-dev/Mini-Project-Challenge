@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    color: white;
+}
+
+body{
+    height: 100vh;
+    background: url(ok.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container{
+    height:70%;
+    width: 27vw;
+    border: 2px solid white;
+    border-radius: 20px;
+    backdrop-filter: blur(8px);
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+}
+
+.login{
+    color: white;
+    font-size: 35px;
+    margin-top: 50px;
+    margin-bottom: 60px;
+}
+
+i{
+    color: white;
+    margin-right: 10px;
+}
+
+.username,
+.password{
+    width: 70%;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    align-items: center;
+    margin-bottom: 50px;
+}
+
+#email_input ,
+#password_input {
+    border: none;
+    background-color: transparent;
+}
+
+
+.username input:focus,
+.password input:focus {
+    outline: none;
+}
+
+
+.username span,
+.password span{
+    position: absolute;
+}
+
+.line{
+    background-color: white;
+    height: 2px;
+    width: 100%;
+    position: absolute;
+    top: 30px;
+}
+
+.x{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+.remember-me-forgot-password{
+    width: 70%;
+    display: flex;
+    justify-content: space-between;
+    font-size: 12px;
+}
+
+button{
+    background-color: white;
+    color: black;
+    border: none;
+    width: 72%;
+    border-radius: 13px;
+    height: 30px;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+
+#fp,
+#rm{
+    cursor: pointer;
+}
