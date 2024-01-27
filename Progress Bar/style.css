@@ -1,0 +1,122 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    height: 100vh;
+    background-color: aquamarine;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main{
+    width: 500px;
+    height: 200px;
+    position: relative;
+}
+
+.container{
+    position: relative;
+    height: 150px;
+    width: 375px;
+}
+
+#progress-bar-no-color{
+    height: 5px;
+    width: 100%;
+    background-color: gray;;
+}
+
+#progress-bar-color{
+    position: absolute;
+    background-color: rgb(0, 11, 128);
+    width: 0%;
+    height: 5px;
+    transition: all 0.4s ease-in-out;
+}
+
+.circle{
+    width: 30px;
+    height: 30px;
+    border: 5px rgb(0, 11, 128) solid;
+    border-radius: 50%;
+    background-color: white;
+}
+
+.step-start{
+    padding-top: 13px;
+    height: 58px;
+    width: 40px;
+    position: absolute;
+}
+
+.step-1{
+    padding-top: 13px;
+    height: 58px;
+    width: 45px;
+    position: absolute;
+    left: 25%;
+}
+
+.step-2{
+    padding-top: 13px;
+    height: 58px;
+    width: 45px;
+    position: absolute;
+    left: 50%;
+}
+
+.step-3{
+    padding-top: 13px;
+    height: 58px;
+    width: 45px;
+    position: absolute;
+    left: 75%;
+}
+
+.step-final{
+    padding-top: 13px;
+    height: 58px;
+    width: 45px;
+    position: absolute;
+    left:99%;
+}
+
+.circle-1,
+.circle-2,
+.circle-3,
+.circle-4{
+    border-color: gray;
+    transition: all 1s ease-in;
+}
+
+
+
+#button1{
+    width: 80px; 
+    height: 40px;
+    background-color: gray;
+    border-radius: 5px;
+}
+
+#button2{
+    width: 80px; 
+    height: 40px;
+    background-color: rgb(0, 11, 128);
+    border-radius: 5px;
+}
+
+#button1:hover{
+    background-color: rgb(45, 45, 45);
+}
+
+#button2:hover{
+    background-color: rgb(78, 78, 240);
+}
+
+#sp1,#sp2,#sp3,#sp4{
+    color: aquamarine;
+    transition: all .5s ease-in ;
+}

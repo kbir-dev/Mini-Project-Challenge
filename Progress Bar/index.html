@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="utility-class.css" />
+  </head>
+  <body>
+    <div class="main flex alc column">
+      <div class="container flex jfc column">
+        <div id="progress-bar-no-color"></div>
+        <div id="progress-bar-color"></div>
+        <div class="step-start flex jfc alc column">
+          <div class="circle flex jfc alc">
+            <img src="tick.svg" alt="">
+          </div>
+          <span>Start</span>
+        </div>
+
+        <div class="step-1 flex jfc alc column">
+          <div class="circle circle-1 flex jfc alc">
+            <img id="img1" src="cross.svg" alt="">
+          </div>
+          <span id="sp1">Step 1</span>
+        </div>
+        <div class="step-2 flex jfc alc column">
+          <div class="circle circle-2 flex jfc alc">
+            <img id="img2" src="cross.svg" alt="">
+          </div>
+          <span id="sp2" >Step 2</span>
+        </div>
+        <div class="step-3 flex jfc alc column">
+          <div class="circle circle-3 flex jfc alc">
+            <img id="img3" src="cross.svg" alt="">
+          </div>
+          <span id="sp3" >Step 3</span>
+        </div>
+        <div class="step-final flex jfc alc column">
+          <div class="circle circle-4 flex jfc alc">
+            <img id="img4" src="cross.svg" alt="">
+          </div>
+          <span id="sp4" >Final</span>
+        </div>
+      </div>
+
+      <div class="buttons">
+        <button id="button1">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+          >
+            <path
+              d="M4 12L20 12M4 12L8.99996 17M4 12L9 7"
+              stroke="white"
+              stroke-width="3"
+            />
+          </svg>
+        </button>
+        <button id="button2">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+          >
+            <path
+              d="M20 12L4 12M20 12L15.0001 17M20 12L15 7"
+              stroke="white"
+              stroke-width="3"
+            />
+          </svg>
+        </button>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
