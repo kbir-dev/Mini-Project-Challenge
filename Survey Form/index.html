@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <center>
+      <h1>Survey Form</h1>
+    </center>
+
+    <div class="box">
+      <form>
+        <div class="b1">
+          <div class="name">
+            <label for="name">Name</label><br />
+            <input
+              type="text"
+              id="name"
+              name="name"
+              placeholder="Enter Your name "
+            /><br />
+          </div>
+          <div class="email">
+            <label for="email">Email</label><br />
+            <input
+              type="email"
+              name="email"
+              id="email"
+              placeholder="Enter Your E-mail"
+            /><br />
+          </div>
+          <div class="age">
+            <label for="age">Age</label><br />
+            <input
+              type="date"
+              name="age"
+              id="age"
+              placeholder="Enter Your age"
+            /><br />
+          </div>
+        </div>
+        <div class="describe">
+          <label for="describe">Which option best describes you?</label><br />
+          <select name="describe" id="describe">
+            <option value="Student">Student</option>
+            <option value="Teacher">Teacher</option>
+            <option value="Principal">Principal</option>
+            <option value="Daddy">Daddy</option>
+          </select>
+        </div>
+        <div class="recom">
+          <p>Would you recommend this to a friend ?</p>
+          <input type="radio" id="yes" name="options" value="yes" />
+          <label for="yes">yes</label><br />
+          <input type="radio" id="no" name="options" value="no" />
+          <label for="no">no</label><br />
+          <input type="radio" id="may_be" name="options" value="may be" />
+          <label for="may_be">may be</label>
+        </div>
+        <div class="framework">
+          <p>
+            Languages and Frameworks known <small>(Check all that apply)</small>
+          </p>
+          <input type="checkbox" id="C" name="C" value="C" />
+          <label for="C"> C</label><br />
+          <input type="checkbox" id="C++" name="C++" value="C++" />
+          <label for="C++"> C++</label><br />
+          <input type="checkbox" id="Java" name="Java" value="Java" />
+          <label for="Java"> Java</label><br />
+        </div>
+        <div class="comment">
+          <label for="comments">Any Comments or Suggestions</label><br />
+          <textarea name="comments" id="comments" cols="30" rows="5"></textarea
+          ><br />
+        </div>
+
+        <input type="submit" value="Submit" />
+      </form>
+    </div>
+  </body>
+</html>
